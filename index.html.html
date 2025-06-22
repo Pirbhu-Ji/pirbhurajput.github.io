@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pirbhu Rajput | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      align-items: center;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #005fa3;
+    }
+    section {
+      padding: 80px 20px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 60px;
+    }
+    .hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      object-fit: cover;
+      border: 3px solid #0077cc;
+    }
+    h1, h2 {
+      color: #0077cc;
+      margin-bottom: 20px;
+    }
+    .projects, .skills, .contact, .certificates, .achievements {
+      margin-top: 40px;
+    }
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .skill-bar {
+      margin-bottom: 20px;
+    }
+    .skill-bar label {
+      font-weight: bold;
+    }
+    .bar {
+      height: 20px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+    .bar-fill {
+      height: 100%;
+      background: #0077cc;
+      width: 0%;
+      animation: grow 2s forwards;
+    }
+    @keyframes grow {
+      to { width: var(--width); }
+    }
+    .certificates ul, .achievements ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    .certificates li, .achievements li {
+      margin-bottom: 10px;
+    }
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .contact p {
+      margin-bottom: 10px;
+    }
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .resume-btn:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>Pirbhu Rajput</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <img src="pirbhu.jpg" alt="Pirbhu Rajput" />
+    <div>
+      <h1>About Me</h1>
+      <p>
+        I'm <strong>Pirbhu Rajput</strong>, a Computer Systems Engineering student at <strong>Sukkur IBA University</strong> originally from the beautiful desert region of <strong>Tharparkar</strong>.
+        I am passionate about using technology to improve lives — from automating home appliances using Arduino to developing useful software systems.
+        My journey includes practical experience in embedded systems, web development, and logic-based C++ programming.
+        I enjoy solving real-world problems and bringing ideas to life.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Arduino Based Home Automation</h3>
+      <p>Controls appliances using Arduino, DHT11, Bluetooth, and MIT App Inventor.</p>
+    </div>
+    <div class="project">
+      <h3>Software Banking System</h3>
+      <p>Manages accounts with deposit/withdraw features via C++ file handling.</p>
+    </div>
+    <div class="project">
+      <h3>Student Grading System</h3>
+      <p>Calculates student grades, GPA, and saves to text files.</p>
+    </div>
+    <div class="project">
+      <h3>Salary Management System</h3>
+      <p>Manages salaries and deductions using structured C++ logic.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar">
+      <label>HTML</label>
+      <div class="bar"><div class="bar-fill" style="--width: 90%;"></div></div>
+      <p>I use HTML to structure responsive and semantic web pages like this portfolio.</p>
+    </div>
+    <div class="skill-bar">
+      <label>CSS</label>
+      <div class="bar"><div class="bar-fill" style="--width: 85%;"></div></div>
+      <p>Skilled in CSS for layout, animations, and clean designs. Used it for my projects’ front-end UI.</p>
+    </div>
+    <div class="skill-bar">
+      <label>JavaScript</label>
+      <div class="bar"><div class="bar-fill" style="--width: 70%;"></div></div>
+      <p>Used JS for form validation and interactivity, like smooth scrolling and app logic.</p>
+    </div>
+    <div class="skill-bar">
+      <label>C++</label>
+      <div class="bar"><div class="bar-fill" style="--width: 80%;"></div></div>
+      <p>Created file-handling software like banking systems and grading calculators in C++.</p>
+    </div>
+    <div class="skill-bar">
+      <label>Arduino</label>
+      <div class="bar"><div class="bar-fill" style="--width: 75%;"></div></div>
+      <p>Developed IoT-based automation projects using Arduino, DHT11, relay, and LCDs.</p>
+    </div>
+    <div class="skill-bar">
+      <label>App Inventor</label>
+      <div class="bar"><div class="bar-fill" style="--width: 70%;"></div></div>
+      <p>Designed Android apps for Arduino projects with voice, SMS, and button control features.</p>
+    </div>
+    <div class="skill-bar">
+      <label>Git & GitHub</label>
+      <div class="bar"><div class="bar-fill" style="--width: 65%;"></div></div>
+      <p>Version control for projects and hosting portfolios. My GitHub: <a href="https://github.com/Pirbhu-Ji" target="_blank">Pirbhu-Ji</a></p>
+    </div>
+    <div class="skill-bar">
+      <label>Problem Solver</label>
+      <div class="bar"><div class="bar-fill" style="--width: 85%;"></div></div>
+      <p>I enjoy solving logical, mathematical, and real-world technical challenges efficiently.</p>
+    </div>
+  </section>
+
+  <section id="certificates" class="certificates">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Simplilearn – Introduction to C++</li>
+      <li>Alison – Intermediate Concepts of C++</li>
+      <li>Alison – Prompt Engineering</li>
+      <li>HP Life – AI for Everyone</li>
+      <li>HEC Coursera – Arduino Advanced Concepts</li>
+      <li>GeeksforGeeks – C++ Programming Course</li>
+      <li>Aspire Leaders Program – Module 1 Badge</li>
+      <li>Aspire Leaders Program – Module 2 Badge</li>
+      <li>Aspire Leaders Program – Alumni Badge</li>
+    </ul>
+  </section>
+
+  <section id="achievements" class="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Successfully completed real-world automation and software projects during studies.</li>
+      <li>Attended and participated in a hands-on Arduino physical workshop/webinar.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:pirbhucse@gmail.com">pirbhucse@gmail.com</a></p>
+    <p>Phone: <a href="tel:03293441564">0329-3441564</a></p>
+    <p>GitHub: <a href="https://github.com/Pirbhu-Ji" target="_blank">Pirbhu-Ji</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pirbhu-ji-63746b323/" target="_blank">Pirbhu Ji</a></p>
+    <a href="Pirbhu-Rajput-Resume.pdf" download class="resume-btn">Download My Resume</a>
+  </section>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
